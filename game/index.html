@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Velvet Trilogy — Three Heists, One Night</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0d0a18; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { width: min(100vw, calc(100vh * 1280 / 720)); height: auto; background: #17102a; image-rendering: auto; }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<script type="module">
+  import { boot } from './src/main.js';
+  boot(document.getElementById('game'));
+</script>
+</body>
+</html>
